@@ -1,0 +1,47 @@
+#alert_container {
+	position:fixed;
+    top: 50%;
+    left: 50%;
+    width:600px;
+    height:300px;
+    margin-left: -300px; /*set to a negative number 1/2 of your width*/
+    margin-top: -150px; /*set to a negative number 1/2 of your height*/
+	border: 1px solid #000;
+    background-color: #efefef;
+	z-index: 9999;
+}
+	
+#alert_hider {
+	position:absolute;
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	z-index: 9998;
+	background-color:black;
+	opacity:0.5;
+}
+
+.alert_content {
+    padding: 0px 18px;
+}
+
+.alert_content h3 {
+    font-size: 28px;
+	color: black!important;
+	text-align: center;
+}
+
+.alert_content h2 {
+    font-size: 22px;
+	color: gray!important;
+	text-align: center;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+	color: black!important;
+}

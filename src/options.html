@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body class="bodyoptions">
+<div class="options-table">
+	<div class="options-header">
+		<div id="options-logo"></div>
+		<!-- <div class="options-header-right"> -->
+			<!-- <a id="options-screen-close" href="#">Close</a> -->
+		<!-- </div> -->
+  </div>
+</div>
+<div id="snackbar"></div>
+<div class="tablinkslist">
+	<button class="tablinks" id="tab1">UI color change</button>
+	<button class="tablinks" id="tab2">C&P</button>
+	<button class="tablinks" id="tab3">User barcode scan</button>
+	<button class="tablinks" id="tab4">Multiple delete</button>
+	<div class="options-sponsor"><div style="padding-bottom:12px;"><a href="https://library.technion.ac.il/en" target="_blank"><img id="technion-logo" alt="Technion Library Logo" height="46" width="170"></a></div><a href="#">Need help? Have ideas?</a></div>
+</div>
+
+<div id="div_tab1" class="tabcontent">
+  <h3>UI color change</h3>
+  <p class="options-path-color">Alma color changer</p>
+  <div class="container">
+		<nav class="navoption">
+			<ul><li class="options-overview-icon"></li></ul>
+		</nav>
+		<article>
+			<span class="options-header-title">Overview</span>
+			<p>Every user has different needs and tastes. With the UI color change feature you can choose the color you like. Try it! You can always reset it back to your institution color.</p>
+		</article>
+	</div>
+	<div class="container">
+		<nav class="navoption">
+			<ul><li class="options-configuration-icon"></li></ul>
+		</nav>
+		<article>
+			<span class="options-header-title">Configuration</span>
+			<p>Choose your personal preferred color scheme:</p>
+			<div class="uiRow" style="padding-left:338px;">Color blindness (Deuteranopia)</div>
+			<div class="uiRow">
+			  <div class="uiColumn">
+				<!--p>Primary Secondary</p-->
+				<div class="internalRow"><div class="uiBox" id="box_0_0"></div><div class="uiBox" id="box_0_1"></div></div>
+				<div class="internalRow"><div class="uiBox" id="box_1_0"></div><div class="uiBox" id="box_1_1"></div></div>
+				<div class="internalRow"><div class="uiBox" id="box_2_0"></div><div class="uiBox" id="box_2_1"></div></div>
+			  </div>
+			  <div class="uiColumn uiColumnMiddle">
+				<!--p>Primary Secondary</p-->	
+				<div class="internalRow"><div class="uiBox" id="box_3_0"></div><div class="uiBox" id="box_3_1"></div></div>
+				<div class="internalRow"><div class="uiBox" id="box_4_0"></div><div class="uiBox" id="box_4_1"></div></div>
+				<div class="internalRow"><div class="uiBox" id="box_5_0"></div><div class="uiBox" id="box_5_1"></div></div>
+			  </div>
+			  <div class="uiColumn">
+				<!--p>Primary Secondary</p-->
+				<div class="internalRow"><div class="uiBox" id="box_6_0"></div><div class="uiBox" id="box_6_1"></div></div>
+				<div class="internalRow"><div class="uiBox" id="box_7_0"></div><div class="uiBox" id="box_7_1"></div></div>
+				<div class="internalRow"><div class="uiBox" id="box_8_0"></div><div class="uiBox" id="box_8_1"></div></div>
+			  </div>
+			</div>
+		</article>
+	</div>
+	<div class="bottomright">
+		<button id="resetColorButton" class="options-button">RESET</button>
+	</div>	
+</div>
+<div id="div_tab2" class="tabcontent">
+  <h3>Copy & Paste records in Metadata Editor</h3>
+  <p class="options-path-color">Alma >> Resources >> MDEditor</p>
+  <div class="container">
+		<nav class="navoption">
+			<ul><li class="options-overview-icon"></li></ul>
+		</nav>
+		<article>
+			<span class="options-header-title">Overview</span>
+			<p>The MD Editor Copy and Paste feature enables copying the source local record with all its MARC fields and pasting it on the target local opened record.<br>This way the cataloger can save time by starting a new record based on an exiting one.</p>
+		</article>
+	</div>
+	<div class="container">
+		<nav class="navoption">
+			<ul><li class="step-by-step-icon"></li></ul>
+		</nav>
+		<article>
+			<span class="options-header-title"><a id="step-href" href="#">Step by step instructions</a></span>
+		</article>
+	</div>	
+	<div class="container">
+		<nav class="navoption">
+			<ul><li class="options-configuration-icon"></li></ul>
+		</nav>
+		<article>
+			<span class="options-header-title">Configuration</span>
+			<p>Choose the geographic location of your library:<br/><select id="geographicObject" class="options-height-30 options-width-200"></select></p>
+			<p>Use your organization Alma API key (read & write permissions for bibs):<br />
+				<input type="text" id="apikeyObject" size="40" class="options-height-30 options-width-200" /><a href="https://knowledge.exlibrisgroup.com/Alma/Knowledge_Articles/How_do_I_get_an_API_Key%3F" target="_blank"><img id="options-question-mark" alt="Question icon" /></a>
+			</p>
+		</article>
+	</div>
+	<div class="bottomright">
+		<button id="testURLButton" class="options-button">TEST</button>	
+		<button id="updateURLButton" class="options-button" style="margin-left:10px;">UPDATE</button>
+	</div>
+</div>
+<div id="div_tab2_1" class="tabcontent">
+  <h3>Copy & Paste records in Metadata Editor</h3>
+  <p class="options-path-color">Alma >> Resources >> MDEditor</p>
+  <div class="container">
+		<nav class="navoption">
+			<ul><li class="step-by-step-icon"></li></ul>
+		</nav>
+		<article>
+			<p><span class="options-header-title">Step by step instructions</span></p>
+			<ol>
+				<li>Open MD Editor</li>			
+				<li>Click on the target Marc21 Bibliographic record that you want to replace. It will open on the left editor menu</li>
+				<li>Click "Split Editor F6" <img id='split-editor-image' imgname='split_editor.png' alt='Split editor bar icon' /> in the top editor bar</li>
+				<li>Click on the target Marc21 Bibliographic record that you want to duplicate, It will open on the right editor menu</li>
+				<li>Click "Copy & Paste (right to left)" <img id='copy-paste-image' imgname='copy_paste.png' alt='Copy & paste editor bar icon' /> in the top editor bar</li>
+				<li>Select "Reload Original Record" <img id='refresh-image' imgname='refresh.png' alt='Refresh editor menu icon' /> from the File menu to refresh the target record</li>
+			</ol>
+		</article>
+	</div>
+</div>
+<div id="div_tab3" class="tabcontent">
+  <h3>Scan barcode from student or employee card</h3>
+  <p class="options-path-color">Alma >> Fulfillment >> Manage Patron Services</p>
+  <div class="container">
+		<nav class="navoption">
+			<ul><li class="options-overview-icon"></li></ul>
+		</nav>
+		<article>
+			<span class="options-header-title">Overview</span>
+			<p>This feature converts a 12 digits bar-code into a valid 9 digits Israeli ID.<br />A logic based algorithm validates the ID prior to submitting it back to Alma patron search.<br />Contact us to add your institution conversion logic.</p>
+		</article>
+	</div>
+	<div class="container">
+		<nav class="navoption">
+			<ul><li class="options-configuration-icon"></li></ul>
+		</nav>
+		<article>
+			<span class="options-header-title">Configuration</span>
+			<p>Choose conversion logic:<br/><select id="barcodeLogicObject" class="options-height-30 options-width-200"></select></p>
+		</article>
+	</div>
+	<div class="bottomright">
+		<button id="updateBarcodeButton" class="options-button">UPDATE</button>
+	</div>
+</div>
+<div id="div_tab4" class="tabcontent">
+  <h3>Select and delete multiple fields in one click</h3>
+  <p class="options-path-color">Alma >> Resources >> MDEditor</p>
+  <div class="container">
+		<nav class="navoption">
+			<ul><li class="options-overview-icon"></li></ul>
+		</nav>
+		<article>
+			<span class="options-header-title">Overview</span>
+			<p>This feature deletes all the selected fields of the recorded.</p>
+		</article>
+	</div>
+  <div class="container">
+		<nav class="navoption">
+			<ul><li class="step-by-step-icon"></li></ul>
+		</nav>
+		<article>
+			<span class="options-header-title">Step by step instructions</span>
+			<ol>
+				<li>Select the required fields using control (Ctrl) key. The select fields will marked in light blue</li>			
+				<li>Click the delete icon <img id='multiple-delete-image' imgname='multiple_delete.png' alt='Multiple delete bar icon' /></li>
+				<li>Confirm you want to delete by clicking the "OK" button on the right bottom</li>
+				<li>The selected fields will be deleted</li>
+			</ol>
+		</article>
+	</div>	
+</div>
+<div id="screen-init-indicator"></div>
+</body>
+</html> 
