@@ -11,6 +11,7 @@ Main features:
 3. Scan bar-code from student or employee card
 4. MD-Editor delete multiple fields
 
+![Marquee - 1400x560](https://user-images.githubusercontent.com/40073142/54271904-27ae0f00-458b-11e9-9732-6fd922a9f024.png)
 
 
 
